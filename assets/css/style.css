@@ -1,0 +1,23 @@
+/* instructions */
+#instructions {
+	background: #000000;
+	color: #fff;
+}
+
+
+#randomNumber {
+	font-size: 4rem;
+}
+
+/* scores */
+#scoreCard {
+	width: 100%;
+	background: red;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+i {
+	color: red;
+}

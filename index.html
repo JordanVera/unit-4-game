@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Destroyer</title>
+	
+	<meta charset="utf-8">
+	
+	<meta name="description" content="The HTML5 Herald">
+	
+	<meta name="author" content="SitePoint">
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+	<!-- FOUNDATION CDN -->
+	<!-- Compressed CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<!-- custom css -->
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<script
+				  src="https://code.jquery.com/jquery-3.3.1.min.js"
+				  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				  crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<h2 class="text-center">Test Your Aim! <i class="fas fa-bullseye"></i></h2>
+	  
+	  <!-- instructions -->
+	  <div class="grid-container">
+		<div class="grid-x grid-margin-x grid-margin-y">
+			<div class="cell medium-9">
+				<section class="callout text-center" style="height: 100%;" id="instructions">
+					<p>You will be given a random number at the start of the game</p>
+					
+					<p>There is four weapons below, shoot the ammo to hit the target the specified amount of time</p>
+					
+					<p>You will win by shooting the target the specific amount of times, you will lose the game by going over</p>
+					
+					<p>Each time the game restarts, the number of shots the gun fire at a time will change</p>
+				</section>
+			</div><!-- column -->
+			  <div class="cell medium-3" id="scores">
+				<div style="height: 100%; background: red;">
+					<p class="text-center"><span id="randomNumber"></span></p>
+					
+					<p class="text-center" id="wins"><strong>wins :</strong></p>
+					
+					<p class="text-center" id="losses"><strong>losses :</strong></p>
+				</div>
+			</div>
+		</div><!-- grid section -->
+	</div><!-- grid container -->
+	  
+	  <div class="grid-container">
+		<div class="grid-x grid-margin-x grid-margin-y">
+			<div class="medium-6 large-3">
+				<img src="assets/media/1.jpeg" alt="" id="uno" class="guns" />
+			</div>
+			
+			<div class="medium-6 large-3">
+				<img src="assets/media/2.jpeg" alt="" id="dos" class="guns" />
+			</div>
+			
+			<div class="medium-6 large-3">
+				<img src="assets/media/3.jpeg" alt="" id="tres" class="guns" />
+			</div>
+			
+			<div class="medium-6 large-3">
+				<img src="assets/media/4.png" alt="" id="cuatro" class="guns" />
+			</div>
+		</div><!-- grid section -->
+	</div><!-- grid container -->
+	  
+	  
+	  <section class="grid-container">
+		<div id="scoreCard">
+			<p class="text-center">Your score is :</p>
+			
+			<p class="text-center"><span id="totalScore">12</span></p>
+		</div>
+	</section>
+	  
+	  
+	  
+	  <!-- Compressed JavaScript -->
+	  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA==" crossorigin="anonymous"></script>
+	  <!-- external javascript -->
+	  <script src="assets/javascript/game.js"></script>
+	
+</body>
+</html>
